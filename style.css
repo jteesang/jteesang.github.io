@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva|Poppins&display=swap');
+
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: #d8c9ff;
+}
+
+.intro {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: url(julia_lavenderwall.jpg);
+	opacity: 0.7;
+	display: table;
+	top: 0;
+	background-size: cover;
+	border-bottom: 3rem solid rgba(0,0,0,0.1);
+
+	/*border-bottom: 4px solid transparent;*/
+	/*border: 30px solid transparent;*/
+
+}
+
+.intro .inner {
+	display: table-cell;
+	width: 100%;
+	max-width: none;
+}
+
+
+.content {
+	top: 200px;
+	max-width: 500px;
+	margin: auto;
+	text-align: center;
+	color: #1e1d1f;
+	line-height: 25px;
+	padding-top: 75px;
+}
+
+.content h1 {
+	font-family: 'Mansalva', cursive;
+	font-size: 450%;
+}
+
+.btn {
+	top: 100px;
+	border-radius: 9px;
+	font-family: 'Poppins', sans-serif;
+	color: #1e1d1f;
+	font-size: 135%;
+	padding: 10px 15px;
+	border: solid #000000 3px; 
+/*	text-transform: uppercase;
+*/	text-decoration: none;
+}
+
+.tag {
+	top: 100px;
+	font-family: 'Poppins', sans-serif;
+	color: #1e1d1f;
+	font-size: 135%;
+
+}
+
+.btn:hover {
+	color: #d8c9ff;
+	border: solid #d8c9ff 3px;
+}
+
+/*.scroll img {
+	position: absolute;
+	right: 60px;
+	bottom: 30px;
+	height: 50px;
+	width: 50px;
+	animation: hideshow 3s ease infinite;
+}*/
+
+#more-arrows {
+	width: 75px;
+	height: 65px;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	bottom: 10px;
+	left: 48%;
+}
+  
+#more-arrows:hover polygon {
+	fill: #000;
+	transition: all 0.2s ease-out;
+}
+
+#more-arrows:hover polygon.arrow-bottom {
+	transform: translateY(-18px);
+}
+
+#more-arrows:hover polygon.arrow-top {
+	transform: translateY(18px);
+}
+
+polygon {
+	fill: #000;
+	transition: all .2s ease-out;
+}
+
+polygon.arrow-middle {
+	opacity:0.75;
+}
+
+polygon.arrow-top {
+	opacity: 0.5;
+}
+
+
+/*@keyframes hideshow {
+	0% { opacity: 1; }
+	10% { opacity: 1; }
+	15% { opacity: 0; }
+	100% { opacity: 0; }
+}*/
+
+.summary {
+	background: #f0ebff;
+
+}
+.summary h2 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 200%;
+	text-align: center;
+	top: 100px;
+	color: #1e1d1f;
+
+}
+
+.column-s #middle {
+	margin: auto;
+	width: 50%;
+	display: block;
+}
+.column-s #middle img {
+	margin: auto;
+	display: block;
+	background:none;
+}
+
+#middle img:hover  {
+	color: #fff;
+	opacity:0.4;
+}
+.column-s .blog p {
+	margin: -40px;
+}
+
+.center {
+	text-align: center;
+}
+
+.img-size {
+	max-width: 80%;
+	max-height: 80%;
+}
+
+.img-size-a {
+	max-width: 20%;
+	max-height: 20%;
+	margin: -90px;
+}
+
+/*.column #inner p {
+	text-align: center;
+}*/
+
+p {
+	font-size: 100%;
+	font-color: #1e1d1f;
+	line-height: 210%;
+	text-align: justify;
+	margin: 8%;
+	font-family: 'Poppins', sans-serif;
+	vertical-align: middle;
+}
+
+/*br {
+	border: 3rem solid rgba(0,0,0,0.1);
+
+}*/
+
+.break {
+	background: #d8c9ff;
+	height: 100px;
+}
+.projects {
+	background: #f0ebff;
+}
+
+.projects h2 {
+	padding: 30px;	
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 200%;
+	margin: -10px;
+/*	text-decoration-line: underline;
+*/}
+
+.line-separator {
+	height: 1px;
+	border-bottom: 1px solid #000;
+	margin: 0 70px 0;
+}
+
+.projects .row h2 {
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 200%;
+}
+
+.accolades {
+	background: #f0ebff;
+}
+
+.accolades h2 {
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 200%;
+	padding: 30px;
+	margin: -10px;
+}
+@media screen and (max-width: 768px) {
+	.content h1 {
+		font-size: 250%;
+	}
+	.btn {
+		font-size: 110%;
+		padding: 7px 15px;
+	}
+	.summary p {
+		font-size: 80%;
+		line-height: 160%;
+	}
+	p {
+		font-size: 100%;
+		line-height: 160%;
+	}
+	.column-s {
+		width: 100%;
+	}
+}
+
+.column-s {
+	float: left;
+	width: 33.33%;
+	height: 350px;
+}
+
+.container-p {
+	float: left;
+	width: 33.33%;
+	height: 600px;
+}
+
+.container-a {
+	float: left;
+	width: 100%;
+	height: 500px;
+}
+
+.card-body {
+	padding: 10px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+footer {
+	text-align: center;
+	display: block;
+	left: 0;
+	bottom: 0px;
+	padding: 10px;
+	font-family: 'Poppins',sans-serif;
+}
+
+footer p {
+	line-height: 100%;
+	text-align: center;
+}
+
+footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	line-height: 180%;
+}
+
+
+
+
